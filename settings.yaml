@@ -1,0 +1,5 @@
+pathsFile: "paths.yaml"
+virustotalAPI: "<API_KEY>"
+elasticIP: "localhost"
+elasticPort: "9200"
+databaseFile: "files.db"
