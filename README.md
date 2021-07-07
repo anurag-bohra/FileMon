@@ -12,7 +12,7 @@ databaseFile: "files.db"
 ```
 
 **paths.yaml**
-This file specifies the file paths that needs to be monitored. Monitor has been added for three type of events which are Create, Modify and Delete. The paths can be specified either in absoulute format or relative. Input the paths in respective keys. We can specify either directory or a path to a file. To specify directory, end thepath with the '/' or '\' respectively.
+This file specifies the file paths that needs to be monitored. Monitor has been added for three type of events which are Create, Modify and Delete. The paths can be specified either in absoulute format or relative. Input the paths in respective keys. We can specify either directory or a path to a file. To specify directory, end thepath with the '/' or '\\' respectively.
 ```
 fileEvents:
   createEvents:
@@ -24,7 +24,7 @@ fileEvents:
 ```
 
 Requirements:
-** Python 3.7+ **
+**Python 3.7+**
 Library requirements:
 ```
 pip3 install watchdog
