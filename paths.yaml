@@ -1,34 +1,7 @@
 fileEvents:
   createEvents:
     - /Library/LaunchAgents/
-    - ~/Library/LaunchAgents
-    - /Library/LaunchDaemons
-    - /System/Library/LaunchDaemons
-    - /System/Library/LaunchAgents
-    - /var/at/tabs/
-    - ~/Library/Preferences/com.apple.loginwindow.plist
-    - /etc/emond.d/rules/
-    - /private/var/db/emondClients/
-    - ~/Library/Preferences/ByHost 
   modifyEvents:
-    - /Library/LaunchAgents/
-    - ~/Library/LaunchAgents
-    - /Library/LaunchDaemons
-    - /System/Library/LaunchDaemons
-    - /System/Library/LaunchAgents
-    - /var/at/tabs/
     - ~/Library/Preferences/com.apple.loginwindow.plist
-    - /etc/emond.d/rules/
-    - /private/var/db/emondClients/
-    - ~/Library/Preferences/ByHost 
   deleteEvents:
-    - ~/Library/LaunchAgents
-    - /Library/LaunchAgents/
-    - /Library/LaunchDaemons
-    - /System/Library/LaunchDaemons
-    - /System/Library/LaunchAgents
-    - /var/at/tabs/
-    - ~/Library/Preferences/com.apple.loginwindow.plist
-    - /etc/emond.d/rules/
-    - /private/var/db/emondClients/
     - ~/Library/Preferences/ByHost/
