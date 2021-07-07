@@ -34,3 +34,9 @@ pip3 install pyyaml
 ```
 
 Execution: Simply run ```python3 main.py``` with no arguments. it starts monitoring the paths. If the path specified does not exist, it will be added to watchdog observer once the path becomes accessible. 
+
+**Future Work:**
+1. Incase of plist files, parsing the file to read the Executable Path and auto-scanning that.
+2. Add more Event handler types such as read, open
+3. Include Process Monitor and environment variable scanning for various other scans such as PRELOAD, DYLIB 
+4. Add Regex based filtering for paths
