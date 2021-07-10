@@ -150,6 +150,7 @@ def event_handler(event):
     payload['isDirectory'] = event.is_directory
     payload['sha256'] = "None"
     payload['VTScore'] = "None"
+    settings = read_yaml()
     if not payload['isDirectory']:
         sha256_hash = hashlib.sha256()
         if os.path.exists(event.src_path):
@@ -157,7 +158,6 @@ def event_handler(event):
                 for byte_block in iter(lambda: rFile.read(4096), b""):
                     sha256_hash.update(byte_block)
             payload['sha256'] = sha256_hash.hexdigest()
-        settings = read_yaml()
         check_and_insert_database(payload, settings)
     else:
         send_payload_elastic(payload, settings)
