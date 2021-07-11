@@ -70,7 +70,7 @@ def parse_vt_data(data):
 def get_score_from_vt(file_hash, api_key):
     score = 0
     file_url = 'https://www.virustotal.com/api/v3/files/' + str(file_hash)
-    headers = {'x-apikey': 'a6569e92c604a9d2746abd74f245f85ae0d6a99421c5fa7fb5058e64e1c7daef'}
+    headers = {'x-apikey': api_key}
     resp = requests.get(file_url, headers=headers)
     data = json.loads(resp.text)
     score = parse_vt_data(data)
