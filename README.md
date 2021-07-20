@@ -1,6 +1,8 @@
 # FileMon
 A simple Filesystem monitor with virustotal query integration and events being sent to elastic. The code has been tested on Linux(Debian)/MACOS Catalina. The code should also work in Windows though.
 
+A databasew is mentioned with all the file details with the has so as to avoid repeated lookup in virusTotal.
+
 **settings.yaml**
 This file should be present in the directory where the script files are present. Please input following fields in this file.
 ```
@@ -40,3 +42,4 @@ Execution: Simply run ```python3 main.py``` with no arguments. it starts monitor
 2. Add more Event handler types such as read, open
 3. Include Process Monitor and environment variable scanning for various other scans such as PRELOAD, DYLIB 
 4. Add Regex based filtering for paths
+5. Add Filtering based on known File types such as macho, PE, ELF, etc. 
